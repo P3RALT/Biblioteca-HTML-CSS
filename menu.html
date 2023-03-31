@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  C-O-D-E  </title>
+</head>
+<!-- COLUNA -->
+<style>
+.menu-vertical {position: fixed;
+top: 0;
+left: 0;
+width: 200px;
+height: 100%;
+background-color: #000000;}
+
+.menu-vertical ul {list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.menu-vertical li {border-bottom: 1px solid #000000;}
+.menu-vertical li:last-child {border-bottom: none;}
+
+.menu-vertical a {display: block;
+padding: 10px 15px;
+color: #fff;
+text-decoration: none;}
+  
+.menu-vertical a:hover {background-color: #000000;}
+  
+.menu-vertical{border: 1px solid;}
+</style>
+<!-- CONTEUDO -->
+<style>
+.conteudo{padding: 0;
+margin-left: 15%;
+margin-right: 3%;}
+
+h1{text-align: center;
+   text-shadow: #333;
+   border-bottom: 1px solid black ;
+   margin-bottom: 5vh;}
+</style>
+<!-- GRID -->
+<style>
+.grid-container {display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;}
+
+.grid-item {border: 1px solid #ccc;
+  padding: 20px;}
+</style>
+<!-- Bloco de Notas-->
+<style>
+/* Definindo o estilo do bloco de notas */
+.bloco-notas {width: 500px;
+    height: 400px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 50px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;}
+
+ /* Definindo o estilo do título */
+.titulo {font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;}
+
+/* Definindo o estilo do conteúdo */
+.conte{height: 280px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;}
+  </style>
+<body>
+<div class="menu-vertical">
+<ul><li> <h1 style="color: #fff;"> INDICE </h1></li>
+    <li><a href="#bloco1"> Background Gradient </a></li>
+    <li><a href="#bloco2"> Criar um Bloco de Notas </a></li>
+    <li><a href="#bloco3"> Coluna Link </a></li>
+    <li><a href="#bloco4"> Centralizar Imagem </a></li>
+    <li><a href="#bloco5"> Grid Coluna </a></li>
+    <li><a href="#bloco6"> Tabela Html Css </a></li>
+    <li><a href="#bloco7"> Menu Vertical </a></li>
+</ul>
+</div>
+<div class="conteudo"> 
+    <h1> CODIGOS SALVOS </h1>
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="bloco-notas">
+                <div class="titulo" id="bloco1"> (CODE) Gradient </div>
+                <div class="conte" contenteditable="true">
+                  <h1 style="font-size: 20px;"> Como deixar o fundo de uma cor para outra?</h1>
+                  <p> body {
+                    background: linear-gradient(45deg, black, gray);
+                  }</p>
+                </div>
+              </div>
+        </div>
+        <div class="grid-item">
+            <div class="bloco-notas">
+                <div class="titulo" id="bloco2"> (CODE) Bloco de Notas </div>
+                <div class="conte" contenteditable="true">
+                  <h1> Como criar um Bloco de Notas </h1>
+                  <p> 
+                        (style) <br>
+                          /* Definindo o estilo do bloco de notas */ <br>
+                          .bloco-notas { <br>
+                            width: 500px; <br>
+                            height: 400px; <br>
+                            background-color: #fff; <br>
+                            border: 1px solid #ccc; <br>
+                            border-radius: 5px; <br>
+                            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); <br>
+                            margin: 50px auto; <br>
+                            padding: 20px; <br>
+                            font-family: Arial, sans-serif; <br>
+                            font-size: 14px; <br>
+                            line-height: 1.5;} <br>
+                    
+                          /* Definindo o estilo do título */ <br>
+                          .titulo { <br>
+                            font-size: 20px; <br>
+                            font-weight: bold; <br>
+                            margin-bottom: 10px;} <br>
+                    
+                          /* Definindo o estilo do conteúdo */ <br>
+                          .conteudo { <br>
+                            height: 280px; <br>
+                            overflow-y: auto; <br>
+                            padding: 10px; <br>
+                            border: 1px solid #ccc; <br>
+                            border-radius: 5px;} <br>
+                        ---------- <br>
+                        (div) class="bloco-notas"> <br>
+                          (div) class="titulo">Bloco de Notas (/div) <br>
+                          (div) class="conteudo" contenteditable="true" <br>
+    
+                        (/div) <br>
+  
+                    </p>
+                </div>
+              </div>
+        </div>
+        <div class="grid-item">
+            <div class="bloco-notas">
+                <div class="titulo" id="bloco3"> (CODE) Linkar Coluna</div>
+                <div class="conte" contenteditable="true">
+                  <h1> Linkar Para Coluna CSS</h1>
+                  <p>     
+                  (style) <br>
+                    html { <br>
+                      scroll-behavior: smooth; <br>
+                    } <br>
+                  (/style) <br>
+                  <br>
+                  (a href="#minha-coluna-de-texto") Ir para a coluna de texto (/a) <br>
+                  (div id="minha-coluna-de-texto") <br>
+                    (p) Aqui está o texto da minha coluna.(/p)  <br>
+                  (/div)
+                </p>
+                </div>
+              </div>
+        </div>
+        <div class="grid-item">
+            <div class="bloco-notas">
+                <div class="titulo" id="bloco4"> (CODE) Imagem Centralizada</div>
+                <div class="conte" contenteditable="true">
+                  <h1> Centralizar uma Imagem </h1>
+                  <p> 	
+                    (style) <br>
+                    .container { <br>
+                        display: flex; <br>
+                        justify-content: center; <br>
+                        align-items: center; <br>
+                        height: 100vh;} <br>
+                        <br>
+                    img { <br>
+                        max-width: 100%; <br>
+                        max-height: 100%; } <br>
+                        
+                    (/style) <br>
+                    <br>
+                (div class="container") <br>
+                    (img src="caminho/para/imagem.jpg" alt="Imagem") <br>
+                (/div)
+                
+                </p>
+                </div>
+              </div>
+        </div>
+        <div class="grid-item">
+            <div class="bloco-notas">
+                <div class="titulo" id="bloco5"> (CODE) Grid Coluna</div>
+                <div class="conte" contenteditable="true">
+                  <h1> Grid html com Colunas </h1>
+                  <p> 
+                    (div class="grid-container") <br>
+                        (div class="grid-item") <br>
+                          (h2)Bloco de texto 1(/h2) <br>
+                          (p)Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nibh non leo tincidunt convallis. Sed tempor, magna ac congue blandit, metus elit egestas tellus, quis iaculis turpis ipsum nec orci.(/p) <br>
+                        (/div) <br>
+                        (div class="grid-item") <br>
+                          (h2)Bloco de texto 2(/h2) <br>
+                          (p)Suspendisse in ipsum at quam finibus sollicitudin vel vel dolor. Etiam tempor risus quis dolor lobortis imperdiet. Proin aliquet eu mauris at mattis. Vivamus mollis leo et pulvinar rhoncus.(/p) <br>
+                        (/div) <br>
+                        (div class="grid-item") <br>
+                          (h2)Bloco de texto 3(/h2) <br>
+                          (p)Nulla nec nisi consectetur, convallis turpis at, ultricies nisi. Donec accumsan, lectus ac tristique suscipit, odio nibh venenatis eros, non lobortis nulla sapien eu ipsum.(/p) <br>
+                        (/div) <br>
+                        (div class="grid-item") <br>
+                          (h2)Bloco de texto 4(/h2) <br>
+                          (p)Curabitur malesuada sapien eget justo consectetur, sit amet lacinia quam consequat. Praesent ullamcorper, mi sit amet lacinia pulvinar, purus ipsum imperdiet lacus, sed varius turpis lorem ac enim.(/p) <br>
+                        (/div) <br>
+                      (/div) 
+                  </p>
+                </div>
+              </div>
+        </div>
+        <div class="grid-item">
+            <div class="bloco-notas">
+                <div class="titulo" id="bloco6">(CODE) Tabela Html Css</div>
+                <div class="conte" contenteditable="true">
+                  <h1> Tabela HTML CSS</h1>
+                  <p> 
+                    (style) <br>
+                        table { <br>
+                            border-collapse: collapse;<br>
+                            width: 100%; <br>
+                            max-width: 600px; <br>
+                            margin: 20px auto; <br>
+                            font-family: Arial, sans-serif; <br>
+                        } <br>
+                        th, td { <br>
+                            padding: 8px; <br>
+                            text-align: left; <br>
+                            border-bottom: 1px solid #ddd; <br>
+                        }<br>
+                        th { <br>
+                            background-color: #f2f2f2; <br>
+                        } <br> 
+                        tr:hover { <br>
+                            background-color: #f5f5f5; <br>
+                        }
+                    (/style) <br>
+                    <br> 
+                    <br>
+                    (table) <br>
+                        (thead) <br>
+                            (tr) <br>
+                                (th) Nome (/th) <br>
+                                (th) Sobrenome (/th) <br>
+                                (th) Idade (/th) <br>
+                            (/tr) <br>
+                            <br>
+                        (/thead) <br>
+                        (tbody) <br>
+                            (tr) <br>
+                                (td)João(/td) <br>
+                                (td)Silva(/td)<br>
+                                (td)28(/td)<br>
+                            (/tr) <br>
+                            <br>
+                            (tr) <br>
+                                (td)Maria(/td) <br>
+                                (td)Santos(/td)<br>
+                                (td)35(/td) <br>
+                            (/tr) <br>
+                            <br>
+                            (tr)  <br>
+                                (td)Paulo(/td)<br>
+                                (td)Oliveira(/td) <br>
+                                (td)42(/td) <br>
+                            (/tr) <br>
+                        (/tbody) <br>
+                    (/table) <br>
+                  </p>
+                </div>
+              </div>
+        </div>
+        <div class="grid-item">
+            <div class="bloco-notas">
+                <div class="titulo" id="bloco7"> (CODE) Menu Vertical</div>
+                <div class="conte" contenteditable="true">
+                  <h1> Menu Vertical Fixed </h1>
+                  <p>
+                   (Style) .menu-vertical { <br>
+                        position: fixed; <br>
+                        top: 0; <br>
+                        left: 0; <br>
+                        width: 200px; <br>
+                        height: 100%;<br>
+                        background-color: #333; <br>
+                      } <br>
+                      <br> 
+                      .menu-vertical ul { <br>
+                        list-style: none; <br>
+                        margin: 0; <br>
+                        padding: 0; <br>
+                      } <br>
+                      <br>
+                      .menu-vertical li { <br>
+                        border-bottom: 1px solid #555; <br>
+                      } <br>
+                      <br>
+                      .menu-vertical li:last-child { <br>
+                        border-bottom: none; <br>
+                      } <br>
+                      <br>
+                      .menu-vertical a { <br>
+                        display: block; <br>
+                        padding: 10px 15px; <br>
+                        color: #fff; <br>
+                        text-decoration: none;<br>
+                      } <br>
+                      <br>
+                      .menu-vertical a:hover { <br>
+                        background-color: #555; <br>
+                      } <br>
+                    (/Style) <br>
+                        (div class="menu-vertical") <br>
+                          (ul) <br>
+                            (li)(a href="#")Item 1(/a)(/li) <br>
+                            (li)(a href="#")Item 2(/a)(/li) <br>
+                            (li)(a href="#")Item 3(/a)(/li) <br>
+                            (li)(a href="#")Item 4(/a)(/li) <br>
+                            (li)(a href="#")Item 5(/a)(/li) <br>
+                          (/ul) <br>
+                        (/div)<br>
+                        (div class="conteudo") <br>
+                          (!-- conteúdo do site aqui --)<br>
+                        (/div) 
+                  </p>
+                </div>
+              </div>
+        </div>
+        <div class="grid-item">
+            <div class="bloco-notas">
+                <div class="titulo" id="bloco7">Bloco de Notas</div>
+                <div class="conte" contenteditable="true">
+                  <h1> Bloco de Notas 4 </h1>
+                  <p> asasasasas</p>
+                </div>
+              </div>
+        </div>
+
+
+            
+    </div>
+</div>
+</body>
+</html>
